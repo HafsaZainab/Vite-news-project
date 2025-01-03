@@ -9,6 +9,7 @@ import NewsCard from './Components/NewsCard'
     <>
   
       <Header/>
+     <Footer/>
       <NewsCard/>
       
     </>
