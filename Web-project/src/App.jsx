@@ -11,6 +11,7 @@ import Footer from './Components/Footer'
     <>
   
       <Header/>
+     <Footer/>
       <NewsCard/>
      <NewsPage/>
       <Footer/>
