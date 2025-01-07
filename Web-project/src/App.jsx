@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import React from 'react';
 import Header from './Components/Header'
-import Footer from './Components/Footer'
 import NewsCard from './Components/NewsCard'
+import NewsPage from './Components/NewsPage'
+import Footer from './Components/Footer'
+
 
  function App() {
 
@@ -10,6 +12,8 @@ import NewsCard from './Components/NewsCard'
   
       <Header/>
       <NewsCard/>
+     <NewsPage/>
+      <Footer/>
       
     </>
   )

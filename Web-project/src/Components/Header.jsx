@@ -1,6 +1,8 @@
 import React from 'react';
 
-import "./Header.css"; // Assuming you have a CSS file for styling.
+import "../App.css"; // Assuming you have a CSS file for styling.
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const onNavitemClick = (category) => {
@@ -18,6 +20,8 @@ const Header = () => {
               <span></span>
               <span></span>
             </button>
+        
+
           </div>
 
           <div className="search flex">
@@ -29,8 +33,9 @@ const Header = () => {
               className="input"
             />
             <button id="search-button" className="search-button">
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </button>
+  <FontAwesomeIcon icon={faMagnifyingGlass} />
+</button>
+
           </div>
         </nav>
 
@@ -42,10 +47,10 @@ const Header = () => {
             <div className="links-items roboto-mono-unique">
               <ul className="flex">
                 {[
-                  { id: "politics", label: "News and Politics" },
+                  { id: "politics", label: "Politics" },
                   { id: "finance", label: "Finance" },
                   { id: "sports", label: "Sports" },
-                  { id: "art", label: "Art Gallery" },
+                  { id: "art", label: "Gallery" },
                   { id: "Health", label: "Health" },
                   { id: "travel", label: "Travel" },
                 ].map((item) => (

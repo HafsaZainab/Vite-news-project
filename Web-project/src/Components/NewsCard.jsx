@@ -1,5 +1,9 @@
 import React from 'react';
-import "./NewsCard.css";
+import "../App.css";
+import BackToTop from "./BackToTop";
+<div>
+        <BackToTop />
+      </div>
 
 // A reusable NewsCard component
 const NewsCard = ({ image, title, source, date, description }) => (
@@ -33,6 +37,9 @@ const NewsContainer = ({ newsItems }) => (
           description={news.description}
         />
       ))}
+    </div>
+    <div>
+    
     </div>
   </main>
 );
